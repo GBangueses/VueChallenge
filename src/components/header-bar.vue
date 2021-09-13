@@ -18,8 +18,11 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <a :href="linkedin" target="_blank" rel="noopener noreferrer" class="link-icons">
+                    <a :href="linkedin" target="_blank" rel="noopener noreferrer" class="link-icons px-2">
                         <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a :href="github" target="_blank" rel="noopener noreferrer" class="link-icons">
+                        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
                     </a>
                 </form>
             </div>
@@ -32,7 +35,8 @@
         data() {
             return {
                 linkedin: 'https://www.linkedin.com/in/gonzalo-bangueses/',
-                vue: 'https://vuejs.org/'
+                vue: 'https://vuejs.org/',
+                github: 'https://github.com/GBangueses/',                
             };
         },
     };
