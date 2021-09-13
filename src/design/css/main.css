@@ -1,0 +1,147 @@
+﻿
+:root {
+    --main-bg-color: #1b6ec2;
+    --header-bg-color: #0059A3 !important;
+    --main-content-color: #F5F5F5;
+    --navbar-bg-color: #138CA3;
+}
+
+.title-text {
+    border-bottom: 2px solid var(--navbar-bg-color) !important;
+    padding-left: 8px;
+    padding-right: 16px;
+    display: inline-block;
+    color: #555;
+    letter-spacing: 0px;
+}
+
+.bg-challenge {
+    background-color: var(--navbar-bg-color) !important;
+}
+
+.navbar {
+    padding: .5rem 1rem;
+}
+
+.vue-icon {
+    color: #42b883;
+}
+
+.link-icons {
+    color: white;
+}
+
+    .link-icons:hover {
+        color: #192845
+    }
+
+/* img {
+    max-width: 20rem;
+    max-height: 20rem;
+} */
+
+.img-full {
+    /* width: 100% !important;
+    height: 100% !important; */
+    /* max-width: 100%;
+    object-fit: none;
+    object-position: 0 0; */
+    max-width: max-content;
+    text-align: end;
+}
+
+img::before {
+    display: block;
+    content: '';
+    padding-top: calc(100% * 2 / 3);
+    /* You could reduce this expression with a preprocessor or by doing the math. I've kept the longer form in `calc()` to make the math more readable for this demo. */
+}
+
+@media only screen and (min-width: 200px) {
+    svg {
+        height: 1.0rem;
+        width: 1.0rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    svg {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+.card-img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-img {
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.container .overlay {
+    opacity: 1;
+}
+
+.image-section {
+    position: relative;
+}
+
+.rounded-img {
+    border-radius: 0.5rem !important
+}
+
+.close {
+    display: contents;
+}
+
+.overlay-section {
+    position: absolute !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer-none {
+    cursor: default !important;
+}
+
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 2s ease-in-out;
+}
+
+.v-leave,
+.v-enter-to {
+    opacity: 1;
+}
+
+.v-enter,
+.v-leave-to {
+    opacity: 0;
+}
