@@ -13,6 +13,7 @@
                     <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
                 </div>
 
+            <social-menu class="overlay-element"></social-menu>
             <div class="card" style="max-width: fit-content;">
                 <image-zoom :regular=cropped_picture
                             :zoom=full_picture
